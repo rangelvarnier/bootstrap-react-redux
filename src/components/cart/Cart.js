@@ -1,8 +1,9 @@
 import React, {Component} from 'react';
 import {bindActionCreators} from 'redux';
 import {connect} from 'react-redux';
+import { withRouter } from 'react-router-dom'
 
-import * as cartActions from '../actions/actionCreatorCart';
+import * as cartActions from '../../actions/actionCreatorCart';
 
 import Shelf from './Shelf';
 
@@ -36,6 +37,6 @@ const mapDispatchToProps = dispatch => {
     }
 }
 
-const CartContainer = connect(mapStateToProps, mapDispatchToProps)(Cart);
+const CartContainer = withRouter(connect(mapStateToProps, mapDispatchToProps)(Cart));
 
 export default CartContainer;

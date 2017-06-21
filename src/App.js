@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import logo from './logo.svg';
 import './App.css';
 import PropTypes from 'prop-types';
-import Cart from './components/Cart';
+import Cart from './components/cart/Cart';
 
 class App extends Component {
   render() {
